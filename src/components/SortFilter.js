@@ -6,7 +6,8 @@ const SortFilter = (props) => {
     <div> Sort By: &nbsp;
       <select onChange={props.handleSort}>
         <option value="None">None</option>
-        <option value="Name">Name</option>
+        <option value="Name Ascending">Name Ascending</option>
+        <option value="Name Descending">Name Descending</option>
         <option value="Weight">Weight</option>
       </select>
     </div>

@@ -22,7 +22,7 @@ export default class Hog extends React.Component {
     return (
       <div className="ui eight wide column">
           <div className="card">
-          <button onClick={this.hidePig}>Hide Piggy</button>
+          <button onClick={this.hidePig}>{this.state.show ? `Hide Piggy` : `Show Piggy`}</button>
           {this.state.show ?
           <div onClick={this.changeInfo}>
             <h1>{this.props.name}</h1>
